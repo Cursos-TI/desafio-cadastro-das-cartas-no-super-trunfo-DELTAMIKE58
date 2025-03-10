@@ -41,50 +41,57 @@ int main() {
     printf("PIB per capta:%f\n",percapta1);
     printf("Densidade populacional:%f\n", Densidade1);
 
-    //O SISTEMA E BEM SIMPLES E SUA FUNÇAO CONSISTE BASICAMENTE EM CADASTRO DE CARTAS DO JOGO SUPER TRUNFO
-    //ELE ATIA POR MEIO DE PRINTF E SCANF E ESTA DIVIDO E 2 SIMBOLICAMENTE POR ESTAS LINHAS DE COMENTARIO
-    //SENDO A PARTE ACIMA DA CARTA 1 CONTENDO AS VARIAVEIS E AS INTERAÇOES E ABAIXO O ESMO SISTEMA PARA CARTA 2
+    //O SISTEMA E BEM SIMPLES E SUA FUNÇAO CONSISTE BASICAMENTE EM CADASTRO, COMPARAÇAO E DECISAO DE QUAL CARTA VENCEU
+    //BASCIACAMENTE O PROGRAMA RECEBE E ARMAZENA INFORMACOES SOBRE AS CARTAS COM PRINTF E SCANF, DEPOIS ELE CALCULA
+    //DENSIDADE POPULACIONAL E PIB PERCAPTA DAS DUAS COM OPERACOES DE DIVISAO IDENTIFICADAS COM BARRA , DEPOIS O SISTEMA DECIDE
+    //O VENCEDOR POR BASE DA COMPARACAO DE PIBS POR MEIO DE IF E ELSE , DANDO A RESPOSTA NO FIM
 
 
-        char codigo[50],nome[50],estado[100];
-        int turismo;
-        float pib,territorio;
-        int populacao;
+        char codigo2[50],nome2[50],estado2[100];
+        int turismo2;
+        float pib2,territorio2;
+        int populacao2;
         float percapta2;
         float densidade2;
 
         printf("Digite o codigo da segunda carta: \n");
-        scanf("%s",codigo);
+        scanf("%s",codigo2);
     
         printf("Digite o nome da cidade: \n");
-        scanf("%s",nome);
+        scanf("%s",nome2);
     
         printf("Digite o Estado:\n");
-        scanf("%s",estado);
+        scanf("%s",estado2);
     
         printf("Digite o numero populacional da cidade:\n");
-        scanf("%d",&populacao);
+        scanf("%d",&populacao2);
     
         printf("Digite o PIB da mesma:\n");
-        scanf("%f",&pib);
+        scanf("%f",&pib2);
     
         printf("Digite seu territorio em kms quadrados:\n");
-        scanf("%f",&territorio);
+        scanf("%f",&territorio2);
     
-        printf("Codigo: %s\n", codigo);
-        printf("Nome:%s\n",nome);
-        printf("Estado:%s\n",estado);
-    
-        printf("Populacao:%d\n",populacao);  
-        densidade2 = populacao / territorio;
-        percapta2 = pib / populacao;
-
-        printf("PIB:%f\n",pib);
-        printf("Territorio:%f\n",territorio);
-
-    
-        printf("SUPER TRUNFO CIDADES , AREA DE CADASTRO!");
+        printf("Codigo: %s\n", codigo2);
+        printf("Nome:%s\n",nome2);
+        printf("Estado:%s\n",estado2);
         
+        printf("PIB:%f\n",pib2);
+        printf("Populacao:%d\n",populacao2);  
+        densidade2 = populacao2 / territorio2;
+        percapta2 = pib2 / populacao2;
+        
+        printf("PIB per capta:%f\n",percapta2);
+    printf("Densidade populacional:%f\n", densidade2);
+
+    
+          if(pib1 > pib2 ){
+          printf("A carta 1 venceu ! ");
+
+        } else { 
+          printf("Carta 2 venceu!\n");
+        
+        }
         
         return 0;
         
