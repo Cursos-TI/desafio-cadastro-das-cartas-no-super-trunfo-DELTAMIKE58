@@ -84,14 +84,16 @@ int main() {
         printf("PIB per capta:%f\n",percapta2);
     printf("Densidade populacional:%f\n", densidade2);
 
-    
-          if(pib1 > pib2 ){
-          printf("A carta 1 venceu ! ");
+    int opcao;
 
-        } else { 
-          printf("Carta 2 venceu!\n");
-        
-        }
+    printf("PREPARE-SE PARA A BATALHA!\n");
+    printf("Escolha com quais atributos fazer comparacao\n");
+    printf("Opcao 1: PIB\n");
+    printf("Opcao 2: Territorio\n");
+    printf("Opcao 3: Populacao\n");
+    printf("opcao 4: Densidade demografica\n");
+    printf("opcao 5: Renda percapta\n");
+    
         
         return 0;
         
