@@ -93,7 +93,42 @@ int main() {
     printf("Opcao 3: Populacao\n");
     printf("opcao 4: Densidade demografica\n");
     printf("opcao 5: Renda percapta\n");
+    scanf("%d" , &opcao );
     
+        switch (opcao)
+        {
+        case 1:
+               if(pib1 > pib2){
+    printf(" CARTA 1 VENCEU\n ");
+             } else if(pib1<pib2){
+    printf("CARTA 2 VENCEU\n");
+              }else{
+    printf("EMPATARAM!");
+        }
+             
+        break;
+        
+        case 2:
+               if(territorio1 > territorio2){
+    printf(" CARTA 1 VENCEU\n ");
+             } else if(territorio1<territorio2){
+    printf("CARTA 2 VENCEU\n");
+              }else{
+    printf("EMPATARAM!");
+        }
+            
+          break;
+        
+        case 3:
+               if(populacao1> populacao2){
+    printf(" CARTA 1 VENCEU\n ");
+             } else if(populacao1<populacao2){
+    printf("CARTA 2 VENCEU\n");
+              }else{
+    printf("EMPATARAM!");
+          
+    break;
+              }
         
         return 0;
         
