@@ -119,31 +119,30 @@
             }
             
             printf("SEGUNDA ESCOLHA!\n");
-            printf("Opcao 1:PIB\n");
-            printf("Opcao 2:Territorio\n");
-            printf("Opcao 3:Populacao\n");
-            printf("opcao 4:Densidade demografica\n");
-            printf("opcao 5:Renda percapta\n");
-            printf("Ecolha oprimeiro atributo:\n");
+            printf("Opcao 6:PIB\n");
+            printf("Opcao 7:Territorio\n");
+            printf("Opcao 8:Populacao\n");
+            printf("opcao 9:Densidade demografica\n");
+            printf("opcao 10:Renda percapta\n");
+            printf("Ecolha segundo:\n");
             scanf("%d" , &opcao2 );
     
             switch (opcao2)
         {
-        case 1:
+        case 6:
             printf("Voce escolheu PIB\n");
-            
             resultado2=pib1 > pib2 ? 1 : 0 ;
             break;
-        case 2:
+        case 7:
             printf("Voce escolheu territorio\n");
-            resultado2=territorio1 > territorio2 ? 1 : 0 ;
-            case 3:
+            resultado2 =territorio1 > territorio2 ? 1 : 0 ;
+            case 8:
             printf("Voce escolheu populacao\n");
             resultado2=populacao1 > populacao2 ? 1 : 0 ;
-            case 4: 
+            case 9: 
             printf("Voce escolheu densidade demografica\n");
             resultado2 = Densidade1 < densidade2 ? 1 : 0 ;
-            case 5:
+            case 10:
            printf("Voce escolheu renda percapta\n");
            resultado2=percapta2>percapta1 ? 1 : 0 ;
            default: 
