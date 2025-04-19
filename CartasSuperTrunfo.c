@@ -86,43 +86,35 @@
         int opcao1;
         int resultado1;
         printf("PREPARE-SE PARA A BATALHA!\n");
-        printf("Escolha  o primeiro atributo que deseja comparar:\n");
-        printf("Opcao 1: PIB\n");
-        printf("Opcao 2: Territorio\n");
-        printf("Opcao 3: Populacao\n");
-        printf("opcao 4: Densidade demografica\n");
-        printf("opcao 5: Renda percapta\n");
+        printf("Opcao 1:PIB\n");
+        printf("Opcao 2:Territorio\n");
+        printf("Opcao 3:Populacao\n");
+        printf("opcao 4:Densidade demografica\n");
+        printf("opcao 5:Renda percapta\n");
+        printf("Ecolha oprimeiro atributo:\n");
         scanf("%d" , &opcao1 );
 
         switch (opcao1)
         {
         case 1:
             printf("Voce escolheu PIB\n");
-            resultado1 = pib1 > pib2 ? 1 : 0 ;
+            resultado1=pib1 > pib2 ? 1 : 0 ;
             break;
         case 2:
             printf("Voce escolheu territorio\n");
-            resultado1 = territorio1 > territorio2 ? 1 : 0 ;
+            resultado1=territorio1 > territorio2 ? 1 : 0 ;
             case 3:
-            print("Voce escolheu populacao\n");
-            resultado1 = populacao1 > populacao2 ? 1 : 0 ;
+            printf("Voce escolheu populacao\n");
+            resultado1=populacao1 > populacao2 ? 1 : 0 ;
             case 4: 
             printf("Voce escolheu densidade demografica\n");
             resultado1 = Densidade1 < densidade2 ? 1 : 0 ;
-            case 5:
-            printf("Voced escolhei renda percapta\n");
-            resultado1 = percapta1 > percapta2 ;
-
-        default: 
-           printf("Opcao ivalida!\n");
-            break;
-        }
+            case
+    return 0;
     
-
 
         
-        return 0;
-    }
     
+
         
                               
