@@ -109,8 +109,35 @@
             case 4: 
             printf("Voce escolheu densidade demografica\n");
             resultado1 = Densidade1 < densidade2 ? 1 : 0 ;
-            case
-    return 0;
+            case 5:
+           printf("Voce escolheu renda percapta\n");
+           resultado1=percapta2>percapta1 ? 1 : 0 ;
+           
+           default: 
+           printf("INVALIDO\n");
+                break;
+            }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            return 0;
+        }
+
+
     
 
         
