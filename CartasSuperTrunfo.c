@@ -2,7 +2,6 @@
 
     int main(){
      
-        
         char codigo1[50],nome1[50],estado1[100];
         int turismo1;
         float pib1,territorio1;
@@ -84,8 +83,8 @@
             printf("PIB per capta:%f\n",percapta2);
         printf("Densidade populacional:%f\n", densidade2);
     
-        int opcao;
-    
+        int opcao1;
+        int resultado1;
         printf("PREPARE-SE PARA A BATALHA!\n");
         printf("Escolha  o primeiro atributo que deseja comparar:\n");
         printf("Opcao 1: PIB\n");
@@ -93,64 +92,37 @@
         printf("Opcao 3: Populacao\n");
         printf("opcao 4: Densidade demografica\n");
         printf("opcao 5: Renda percapta\n");
-        scanf("%d" , &opcao );
-        
-            switch (opcao)
-            {
-            case 1:
-                   if(pib1 > pib2){
-        printf(" CARTA 1 VENCEU\n ");
-                 } else if(pib1<pib2){
-        printf("CARTA 2 VENCEU\n");
-                  }else{
-        printf("EMPATARAM!");
-            }
-                 
+        scanf("%d" , &opcao1 );
+
+        switch (opcao1)
+        {
+        case 1:
+            printf("Voce escolheu PIB\n");
+            resultado1 = pib1 > pib2 ? 1 : 0 ;
             break;
-            
-            case 2:
-                   if(territorio1 > territorio2){
-        printf(" CARTA 1 VENCEU\n ");
-                 } else if(territorio1<territorio2){
-        printf("CARTA 2 VENCEU\n");
-                  }else{
-        printf("EMPATARAM!");
-            }
-                
-              break;
-            
+        case 2:
+            printf("Voce escolheu territorio\n");
+            resultado1 = territorio1 > territorio2 ? 1 : 0 ;
             case 3:
-                   if(populacao1> populacao2){
-        printf(" CARTA 1 VENCEU\n ");
-                 } else if(populacao1<populacao2){
-        printf("CARTA 2 VENCEU\n");
-                  }else{
-        printf("EMPATARAM!");
-                  }  
-             break;
-                
-             case 4:
-                if(Densidade1 < densidade2){
-        printf(" CARTA 1 VENCEU\n ");
-                  } else if(Densidade1>densidade2){
-        printf("CARTA 2 VENCEU\n");
-                  }else{
-        printf("EMPATARAM!");
-                }
-             break;
-        
-             case 5:
-             if(percapta1 > percapta2){
-        printf(" CARTA 1 VENCEU\n ");
-                 } else if(percapta1<percapta2){
-        printf("CARTA 2 VENCEU\n");
-                 }else{
-        printf("EMPATARAM!\n");
-              }
+            print("Voce escolheu populacao\n");
+            resultado1 = populacao1 > populacao2 ? 1 : 0 ;
+            case 4: 
+            printf("Voce escolheu densidade demografica\n");
+            resultado1 = Densidade1 < densidade2 ? 1 : 0 ;
+            case 5:
+            printf("Voced escolhei renda percapta\n");
+            resultado1 = percapta1 > percapta2 ;
+
+        default: 
+           printf("Opcao ivalida!\n");
             break;
-            default:
-            printf("Opcao invalida.\n");
-                   
-            }
+        }
+    
+
+
+        
+        return 0;
+    }
+    
         
                               
