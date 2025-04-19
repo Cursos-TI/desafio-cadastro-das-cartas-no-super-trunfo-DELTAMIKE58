@@ -1,8 +1,6 @@
+#include <stdio.h>
 
-    
-   # include <stdio.h>
-
-    int main() {
+    int main(){
      
         
         char codigo1[50],nome1[50],estado1[100];
@@ -89,7 +87,7 @@
         int opcao;
     
         printf("PREPARE-SE PARA A BATALHA!\n");
-        printf("Escolha com quais atributos fazer comparacao\n");
+        printf("Escolha  o primeiro atributo que deseja comparar:\n");
         printf("Opcao 1: PIB\n");
         printf("Opcao 2: Territorio\n");
         printf("Opcao 3: Populacao\n");
@@ -154,8 +152,5 @@
             printf("Opcao invalida.\n");
                    
             }
-        return 0;
-        
-        } 
         
                               
