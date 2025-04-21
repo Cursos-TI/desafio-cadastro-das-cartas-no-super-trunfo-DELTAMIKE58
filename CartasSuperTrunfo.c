@@ -8,7 +8,8 @@
         int populacao1;
         float Densidade1;
         float percapta1;
-        
+        int opcao1 , opcao2 ;
+        int resultado1 , resultado2;
     
         printf("Digite o codigo de sua carta: \n");
         scanf("%s",codigo1);
@@ -83,8 +84,7 @@
             printf("PIB per capta:%f\n",percapta2);
         printf("Densidade populacional:%f\n", densidade2);
     
-        int opcao1 , opcao2 ;
-        int resultado1 , resultado2;
+        
         printf("PREPARE-SE PARA A BATALHA!\n");
         printf("Opcao 1:PIB\n");
         printf("Opcao 2:Territorio\n");
@@ -103,21 +103,27 @@
         case 2:
             printf("Voce escolheu territorio\n");
             resultado1=territorio1 > territorio2 ? 1 : 0 ;
+            break;
             case 3:
             printf("Voce escolheu populacao\n");
             resultado1=populacao1 > populacao2 ? 1 : 0 ;
+            break;
             case 4: 
             printf("Voce escolheu densidade demografica\n");
             resultado1 = Densidade1 < densidade2 ? 1 : 0 ;
+            break;
             case 5:
            printf("Voce escolheu renda percapta\n");
            resultado1=percapta2>percapta1 ? 1 : 0 ;
-           
+           break;
            default: 
            printf("INVALIDO\n");
                 break;
             }
-            
+        if(resultado1 == resultado2){
+           printf("invalido!");
+     }  else {    
+
             printf("SEGUNDA ESCOLHA!\n");
             printf("Opcao 6:PIB\n");
             printf("Opcao 7:Territorio\n");
@@ -126,55 +132,46 @@
             printf("opcao 10:Renda percapta\n");
             printf("Ecolha segundo:\n");
             scanf("%d" , &opcao2 );
-    
+     
+     
             switch (opcao2)
         {
-        case 6:
+        case 1:
             printf("Voce escolheu PIB\n");
             resultado2=pib1 > pib2 ? 1 : 0 ;
             break;
-        case 7:
+        case 2:
             printf("Voce escolheu territorio\n");
             resultado2 =territorio1 > territorio2 ? 1 : 0 ;
-            case 8:
+            break;
+            case 3:
             printf("Voce escolheu populacao\n");
             resultado2=populacao1 > populacao2 ? 1 : 0 ;
-            case 9: 
+           break;
+            case 4: 
             printf("Voce escolheu densidade demografica\n");
             resultado2 = Densidade1 < densidade2 ? 1 : 0 ;
-            case 10:
+           break;
+            case 5:
            printf("Voce escolheu renda percapta\n");
            resultado2=percapta2>percapta1 ? 1 : 0 ;
+           break;
            default: 
            printf("INVALIDO\n");
                 break;
-            }
-
-
+        }
+         
+        if(resultado1 && resultado2)
+        {
+          printf("Voce ganhou!\n");  
+       
+        }else if(resultado1 != resultado2){
+          printf("Empate1\n");
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            return 0;
+        }else{
+          printf("Voce perdeu...\n");
         }
 
-
-    
-
-        
-    
-
-        
-                              
+        return 0 ;
+    } 
+}                         
